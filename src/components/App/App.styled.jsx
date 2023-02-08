@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 15px 30px;
+  padding: 15px 35px;
+  color: blue;
+  
 `;
 
 export const Section = styled.section`
