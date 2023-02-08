@@ -1,7 +1,6 @@
 import  {Component } from 'react';
 import { nanoid } from 'nanoid';
-import { Formik } from 'formik';
-import * as Yup from 'yup';
+
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
