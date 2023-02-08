@@ -1,10 +1,13 @@
 import  {Component } from 'react';
 import { nanoid } from 'nanoid';
+import { Formik } from 'formik';
+import * as Yup from 'yup';
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
 import { ContactList } from 'components/ContactList/ContactList';
 import { Container, Section, TitleH1, TitleH2 } from './App.styled';
 import initialList from './initial';
+
 export class App extends Component {
   state = {
     contacts: initialList,
@@ -17,14 +20,14 @@ export class App extends Component {
     const findName = this.state.contacts.find(
       contact => contact.name.toLowerCase() === normalizedFind
     );
-    if (findName) {
+    if (findName) { // проверяет на наличие одинаковіх контактов
       return alert(`${name} is already in contacts.`);
     }
 
     const findNumber = this.state.contacts.find(
       contact => contact.number === number
     );
-    if (findNumber) {
+    if (findNumber) {// проверяет совпадения номеров
       return alert(`This phone number is already in use.`);
     }
 
