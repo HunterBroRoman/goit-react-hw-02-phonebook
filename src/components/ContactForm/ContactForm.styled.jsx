@@ -4,13 +4,13 @@ export const Form = styled.form`
   max-width: 360px;
   border-radius: 5px;
   padding: 10px;
-  background-color: #68829e;
+  background-color: aqua;
 `;
 
 export const Label = styled.label`
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 `;
 
 export const Input = styled.input`
@@ -20,4 +20,4 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   cursor: pointer;
-`;
+  `;
